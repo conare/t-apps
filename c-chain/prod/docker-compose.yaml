@@ -1,0 +1,91 @@
+version: "3.7"
+services:
+  kms-chris:
+    command: start --config /root/tmkms/tmkms.toml -v
+    container_name: kms-chris
+    image: tmkms_i:v0.12.2
+    networks:
+      - net-chris-kms
+    volumes:
+      - ./kms-chris:/root/tmkms
+
+  val-alice:
+    command: start
+    container_name: val-alice
+    depends_on:
+      - kms-chris
+    image: c-chaind
+    networks:
+      - net-chris-kms
+      - net-alice
+    volumes:
+      - ./val-alice:/root/.c-chain
+
+  sentry-alice:
+    command: start
+    container_name: sentry-alice
+    image: c-chaind
+    networks:
+      - net-alice
+      - net-public
+    volumes:
+      - ./sentry-alice:/root/.c-chain
+
+  val-bob:
+    command: start
+    container_name: val-bob
+    image: c-chaind
+    networks:
+      - net-bob
+    volumes:
+      - ./val-bob:/root/.c-chain
+
+  sentry-bob:
+    command: start
+    container_name: sentry-bob
+    image: c-chaind
+    networks:
+      - net-bob
+      - net-public
+    volumes:
+      - ./sentry-bob:/root/.c-chain
+
+  val-chris:
+    command: start
+    container_name: val-chris
+    depends_on:
+      - kms-chris
+    image: c-chaind
+    networks:
+      - net-chris-kms
+      - net-chris
+    volumes:
+      - ./val-chris:/root/.c-chain
+
+  sentry-chris:
+    command: start
+    container_name: sentry-chris
+    image: c-chaind
+    networks:
+      - net-chris
+      - net-public
+    volumes:
+      - ./sentry-chris:/root/.c-chain
+
+  node-jane:
+    command: start
+    container_name: node-jane
+    image: c-chaind
+    networks:
+      - net-public
+    ports:
+      - 0.0.0.0:26690:26657
+    volumes:
+      - ./node-jane:/root/.c-chain
+
+networks:
+  net-chris-kms:
+  net-alice:
+  net-bob:
+  net-chris:
+  net-public:

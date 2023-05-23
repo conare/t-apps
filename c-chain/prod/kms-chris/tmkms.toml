@@ -1,0 +1,29 @@
+# Tendermint KMS configuration file
+
+## Chain Configuration
+
+### Cosmos Hub Network
+
+[[chain]]
+id = "c-chain"
+key_format = { type = "bech32", account_key_prefix = "cosmospub", consensus_key_prefix = "cosmosvalconspub" }
+state_file = "/root/tmkms/state/c-chain-consensus.json"
+
+## Signing Provider Configuration
+
+### Software-based Signer Configuration
+
+[[providers.softsign]]
+chain_ids = ["c-chain"]
+key_type = "consensus"
+path = "/root/tmkms/secrets/val-chris-consensus.key"
+
+## Validator Configuration
+
+[[validator]]
+chain_id = "c-chain"
+addr = "tcp://val-chris:26659"
+secret_key = "/root/tmkms/secrets/kms-identity.key"
+protocol_version = "v0.34"
+reconnect = true
+

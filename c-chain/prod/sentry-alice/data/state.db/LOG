@@ -1,0 +1,72 @@
+=============== May 23, 2023 (UTC) ===============
+13:02:44.814543 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+13:02:44.833404 db@open opening
+13:02:44.837401 version@stat F·[] S·0B[] Sc·[]
+13:02:44.839632 db@janitor F·2 G·0
+13:02:44.840041 db@open done T·6.128625ms
+=============== May 23, 2023 (UTC) ===============
+13:03:50.685295 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+13:03:50.700451 version@stat F·[] S·0B[] Sc·[]
+13:03:50.701073 db@open opening
+13:03:50.702370 journal@recovery F·1
+13:03:50.703014 journal@recovery recovering @1
+13:03:50.709051 memdb@flush created L0@2 N·1 S·2KiB "gen..Doc,v1":"gen..Doc,v1"
+13:03:50.712682 version@stat F·[1] S·2KiB[2KiB] Sc·[0.25]
+13:03:50.724766 db@janitor F·3 G·0
+13:03:50.725076 db@open done T·23.516208ms
+=============== May 23, 2023 (UTC) ===============
+14:11:16.141303 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:11:16.146343 version@stat F·[1] S·2KiB[2KiB] Sc·[0.25]
+14:11:16.146746 db@open opening
+14:11:16.147194 journal@recovery F·1
+14:11:16.147721 journal@recovery recovering @3
+14:11:16.152962 version@stat F·[1] S·2KiB[2KiB] Sc·[0.25]
+14:11:16.172982 db@janitor F·3 G·0
+14:11:16.173315 db@open done T·26.225042ms
+=============== May 23, 2023 (UTC) ===============
+14:11:33.193507 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:11:33.197775 version@stat F·[1] S·2KiB[2KiB] Sc·[0.25]
+14:11:33.198697 db@open opening
+14:11:33.199223 journal@recovery F·1
+14:11:33.199923 journal@recovery recovering @5
+14:11:33.205731 version@stat F·[1] S·2KiB[2KiB] Sc·[0.25]
+14:11:33.235271 db@janitor F·3 G·0
+14:11:33.235734 db@open done T·36.665125ms
+=============== May 23, 2023 (UTC) ===============
+14:11:35.380198 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:11:35.383423 version@stat F·[1] S·2KiB[2KiB] Sc·[0.25]
+14:11:35.383648 db@open opening
+14:11:35.384013 journal@recovery F·1
+14:11:35.384646 journal@recovery recovering @7
+14:11:35.391059 version@stat F·[1] S·2KiB[2KiB] Sc·[0.25]
+14:11:35.401099 db@janitor F·3 G·0
+14:11:35.401394 db@open done T·17.439291ms
+=============== May 23, 2023 (UTC) ===============
+14:11:38.024601 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:11:38.035318 version@stat F·[1] S·2KiB[2KiB] Sc·[0.25]
+14:11:38.035680 db@open opening
+14:11:38.036205 journal@recovery F·1
+14:11:38.036601 journal@recovery recovering @9
+14:11:38.047661 version@stat F·[1] S·2KiB[2KiB] Sc·[0.25]
+14:11:38.061689 db@janitor F·3 G·0
+14:11:38.062027 db@open done T·25.928625ms
+=============== May 23, 2023 (UTC) ===============
+14:11:40.346250 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:11:40.362960 version@stat F·[1] S·2KiB[2KiB] Sc·[0.25]
+14:11:40.365124 db@open opening
+14:11:40.365947 journal@recovery F·1
+14:11:40.366458 journal@recovery recovering @11
+14:11:40.373679 version@stat F·[1] S·2KiB[2KiB] Sc·[0.25]
+14:11:40.398898 db@janitor F·3 G·0
+14:11:40.399357 db@open done T·33.549792ms
+=============== May 23, 2023 (UTC) ===============
+14:11:47.552424 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:11:47.559892 version@stat F·[1] S·2KiB[2KiB] Sc·[0.25]
+14:11:47.560208 db@open opening
+14:11:47.560591 journal@recovery F·1
+14:11:47.561176 journal@recovery recovering @13
+14:11:47.566182 version@stat F·[1] S·2KiB[2KiB] Sc·[0.25]
+14:11:47.590158 db@janitor F·3 G·0
+14:11:47.593011 db@open done T·32.470125ms
+=============== May 23, 2023 (UTC) ===============
+14:14:55.787706 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed

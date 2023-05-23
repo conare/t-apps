@@ -1,0 +1,14 @@
+syntax = "proto3";
+package conare.cchain.cchain;
+
+import "gogoproto/gogo.proto";
+import "cchain/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "github.com/conare/c-chain/x/cchain/types";
+
+// GenesisState defines the cchain module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}
